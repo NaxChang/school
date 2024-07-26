@@ -1,5 +1,5 @@
-def compute(y):
-    return y + 9
+def compute(z):
+    return z + 9
 
 
 n = int(input())
