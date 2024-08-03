@@ -17,8 +17,7 @@ log_path = os.path.join(data_path,'iot.log')
 if not os.path.isfile(log_path):
     print("沒有iot.log檔,建立新檔")
     with open(log_path,mode='w',encoding='utf-8',newline='') as file:
-        file.write('時間,濕度,溫度\n')
-    
+        file.write('時間,濕度,溫度\n')   
 else:
     print("已經有log檔")
 
