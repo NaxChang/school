@@ -3,6 +3,8 @@ import os
 from datetime import datetime
 import random
 
+if __name__ == '__main__':
+
 current_path = os.path.abspath(__name__) #取得目前檔案路徑
 directory_name = os.path.dirname(current_path) #取得目前資料夾路行
 data_path = os.path.join(directory_name,'data') #目前資料夾路徑加上data目錄
