@@ -33,7 +33,6 @@ def record_info(log_path):
     with open(log_path,mode='a',encoding='utf-8',newline='') as file:
         file.write(now_str + ',' + humidity + ',' + celsius + "\n")
 
-
 def main():
     log_path = created_log_file()
     record_info(log_path)
