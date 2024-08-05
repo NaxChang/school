@@ -1,4 +1,3 @@
-# 4-8
 s1 = input()
 s2 = input()
 if 3 < len(s1) < 20 and 3 < len(s2) < 20:
