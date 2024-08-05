@@ -1,5 +1,3 @@
-Hello World!
-What Is The Weather Like Out There?
-Are You Ok?
-What's Today's Date?
-Excuse Me!
+Hello world!
+What is the weather like out there?
+Are you ok?
