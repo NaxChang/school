@@ -1,25 +1,29 @@
-L1, L2 = [], []
-a, b1 = map(int, input().split())
-for i in range(a):
-    L1.append(list(map(int, input().split())))
-
-b2, c = map(int, input().split())
-for i in range(b2):
-    L2.append(list(map(int, input().split())))
+# 6-10
+A, B = [], []
 ans = []
-if b1 != b2:
+m, n1 = map(int, input().split())
+for i in range(m):
+    A.append(list(map(int, input().split())))
+n2, p = map(int, input().split())
+for i in range(n2):
+    B.append(list(map(int, input().split())))
+if n1 != n2:
     print("error")
 else:
-    # print(L1,L2)
-    for i in range(a):
-        L = []
-
-        for j in range(c):
+    L = []
+    for i in range(m):
+        LL = []
+        for j in range(p):
             summ = 0
-            for k in range(b1):
-                summ += L1[i][k] * L2[k][j]
-            L.append(summ)
-        ans.append(L)
-# print(ans)
-for i in range(len(ans)):
-    print(*ans[i])
+            for k in range(n1):
+                summ += A[i][k] * B[k][j]
+            LL.append(summ)
+        L.append(LL)
+# print(L)
+for x in L:
+    # print(*x)
+    for i in range(len(x)):
+        if i == len(x) - 1:
+            print(x[i])
+        else:
+            print(x[i], end=" ")
