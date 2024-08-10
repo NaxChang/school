@@ -1,10 +1,14 @@
 import signal
 from gpiozero import Button, LED
+from datetime import datetime
 
 
 def user_release():
     print("User presses and releases")
     led.toggle()  # 按一次會進行關或開
+    now = datetime.now()
+    now_str = now.strftime("%Y-%m-%d %H:%M:%S")
+    print(now_str)
     if led.is_lit:
         print("light on")
     else:
