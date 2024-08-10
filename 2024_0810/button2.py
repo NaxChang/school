@@ -3,7 +3,7 @@ from gpiozero import Button, LED
 
 
 def user_release():
-    print("使用者按下放開")
+    print("User presses and releases")
     led.toggle()  # 按一次會進行關或開
     if led.is_lit:
         print("light on")
