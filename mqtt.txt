@@ -1,0 +1,27 @@
+sudo apt remove mosquitto mosquitto-clients
+卸載 mosquitto 和 mosquitto-clients 套件 
+sudo apt purge mosquitto mosquitto-clients 
+刪除套件的配置文件
+dpkg -l | grep mosquito
+確認套件是否已經成功移除
+~sudo apt update 套件更新
+~sudo apt upgrade套件升級
+安裝
+~sudo apt install mosquitto mosquitto-clients 
+mosquitto 和 mosquitto-clients  是兩個與 MQTT 協議相關的套件。
+apt show mosquito 如果我要看是否有安裝
+apt show mosquitto-clients 如果我要看是否有安裝
+開機時自動啟動Mosquitto￼:
+sudo systemctl enable mosquitto
+立即啟動 mosquitto Service:
+sudo systemctl start mosquitto
+檢查mosquitto service狀態: 驗證現在mosquitto service是否在執行
+sudo systemctl status mosquitto
+
+
+
+訂閱主題終端機指令如下：
+mosquitto_sub -d -h localhost -t test/topic
+localhost 改為本地端 mosquitto_sub -d -h 127.0.0.1 -t test/topic
+發佈訂閱主題終端機指令如下
+mosquitto_pub -d -h localhost -t test/topic -m "Hello, Mosquitto!"
