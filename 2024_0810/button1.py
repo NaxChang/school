@@ -15,5 +15,5 @@ if __name__ == "__main__":
 """
 儲存資料 1.attribute 2.property
 功能 method 一定要有括號
-button.method() 
+button.method()
 """
