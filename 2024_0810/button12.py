@@ -1,5 +1,5 @@
 import signal
-from gpiozero import Button, LED
+from gpiozero import Button
 
 
 def user_release():
@@ -9,5 +9,4 @@ def user_release():
 if __name__ == "__main__":
     button = Button(pin=18)
     button.when_released = user_release
-    led = LED(pin=25)
     signal.pause()
