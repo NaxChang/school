@@ -10,6 +10,7 @@ redis_conn = redis.Redis(
 
 # print(redis_conn.ping())
 # 會傳出redis的實體,實體內有屬性,屬性有兩種attribute,propertty
+# 在Linux內密碼不讓別人看到,要設定環境變數
 
 
 def on_message(mosq, obj, msg):
