@@ -21,3 +21,5 @@ if __name__ == '__main__':
     client.connect(os.environ['MQTT_SERVER'])
     client.subscribe('501教室/老師桌燈',qos=2)
     client.loop_forever()
+
+    # 20240817
