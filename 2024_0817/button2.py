@@ -1,6 +1,7 @@
 import signal
 from gpiozero import Button, LED
 from datetime import datetime
+import paho.mqtt.publish as publish
 
 
 def user_release():
@@ -10,9 +11,17 @@ def user_release():
     now_str = now.strftime("%Y-%m-%d %H:%M:%S")
     print(now_str)
     if led.is_lit:
-        print("light on")
+        message = "燈是開的"
+        print(message)
+        publish.single(
+            topic="501教室/學員nameless", payload=message, hostname="127.0.0.1", qos=2
+        )
     else:
-        print("light off")
+        message = "燈是開的"
+        print(message)
+        publish.single(
+            topic="501教室/學員nameless", payload=message, hostname="127.0.0.1", qos=2
+        )
 
 
 if __name__ == "__main__":  # button 全域
