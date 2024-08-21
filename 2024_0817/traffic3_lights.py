@@ -10,7 +10,7 @@ button = Button(pin=18)
 
 def run_cycle():
     current_cycle = 0
-    num_cycle = 5
+    num_cycle = 3
 
     while current_cycle < num_cycle:
         green_led.on()
