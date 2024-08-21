@@ -1,7 +1,7 @@
 from gpiozero import LED
 from time import sleep
 
-# 初始化LED燈
+# 初始化LED燈 240821
 red_led = LED(pin=18)
 green_led = LED(pin=23)
 yellow_led = LED(pin=25)
