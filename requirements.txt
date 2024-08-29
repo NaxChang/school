@@ -7,3 +7,6 @@ python-dotenv
 streamlit
 pandas
 streamlit-autorefresh
+Adafruit-CharLCD
+RPLCD
+smbus2
